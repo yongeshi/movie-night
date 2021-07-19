@@ -6,6 +6,8 @@ function ajax(endpoint, func) {
 	}
 	else if(endpoint == "search") {
 		searchTerm = document.querySelector("#search-id").value.trim();
+		document.querySelector("#movie-searched-id").innerHTML = "Search results for: " + searchTerm; //******* TODO BOLD DOESNT WORK? */
+		document.querySelector("#movie-searched-id").style.fontWeight = 'bold';
 		url = "https://api.themoviedb.org/3/search/movie?api_key=4327aaf1f353f8133e49eea01e474f4e&language=en-US&query=" + searchTerm + "&page=1&include_adult=false";
 	}
 	else {
@@ -22,7 +24,7 @@ function ajax(endpoint, func) {
 				func(httpRequest.responseText);
 			}
 			else {
-				document.querySelector("#show-id").innerHTML = "Error";
+				document.querySelector("#show-count-id").innerHTML = "Error";
 			}
 		}
 	}
@@ -30,7 +32,7 @@ function ajax(endpoint, func) {
 
 function displayResults(results) {
 	let JSresponse = JSON.parse(results);
-	console.log(JSresponse);
+	// console.log(JSresponse);
 
 
 	// Clear out the previous search results before appending the new ones
@@ -39,12 +41,12 @@ function displayResults(results) {
 		body.removeChild(body.lastChild);
 	}
 
-	//display showing # here ****************
+	//display showing number of results here
 	if(JSresponse.total_results == "0") {
-		document.querySelector("#show-id").innerHTML = "No results";
+		document.querySelector("#show-count-id").innerHTML = "No results";
 	}
 	else {
-		document.querySelector("#show-id").innerHTML = "Showing " + JSresponse.results.length + " of " + JSresponse.total_results + " result(s):";
+		document.querySelector("#show-count-id").innerHTML = "Showing " + JSresponse.results.length + " of " + JSresponse.total_results + " result(s):";
 	}
 
 	// Display all the results on the browser

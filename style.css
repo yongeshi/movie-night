@@ -1,14 +1,47 @@
 html, body {
     margin: 0;
     padding-left: 2%;
+    background-color: black;
+}
+h1, #search-form {
+    /* display: inline-block; */
+    width: 290px;
+}
+#search-form input {
+    height: 20px;
+    width: 60%;
+}
+#search-form button {
+    height: 26px;
+    width: 12%;
+    margin-left: -5px;
+}
+#header {
+    /* font-family: 'Zen Tokyo Zoo', cursive; */
+    /* font-family: 'Bebas Neue', cursive; */
+    display: inline-block;
+    font-family: 'Teko', sans-serif;
+    color: red;
+    font-size: 1.25em;
+    width: 50%;
+}
+#show-count-id {
+    font-family: 'Teko', sans-serif;
+    color: red;
+    font-size: 1.10em;
+}
+#movie-searched-id {
+    font-family: 'Teko', sans-serif;
+    font-size: 1.4em;
 }
 .row {
-    background-color: white;
-    width: 98%;
-    margin-left: auto;
+    background-color: black;
+    color: white;
+    /* width: 98%; */
+    /* margin-left: auto; */
     margin-right: auto;
     margin-bottom: 0;
-    padding-left: 2%;
+    /* padding-left: 2%; */
 }
 .row:after {
     content: "";
@@ -16,9 +49,9 @@ html, body {
     display: table;
 }
 .four-column {  
-    width: 40%;
+    width: 29.5%;
     float: left; 
-    margin-left: 4.5%; 
+    margin-left: 1.75%; 
     margin-right: auto;
     margin-bottom: 3%; 
     text-align: center;
@@ -54,12 +87,21 @@ html, body {
 }
 @media(min-width: 768px) {
     #header {
-        font-size: 105%; 
+        font-size: 150%; 
+    }
+    #search-form input {
+        height: 25px;
+        width: 60%;
+    }
+    #search-form button {
+        height: 31px;
+        width: 13%;
+        margin-left: -5px;
     }
     .four-column {  
-        width: 27%;
+        width: 25%;
         float: left; 
-        margin-left: 3.5%; 
+        margin-left: 2.0%; 
     }
     .four-column .name{
         font-size: 130%;
@@ -70,17 +112,26 @@ html, body {
 }
 @media(min-width: 993px) {
     #header {
-        font-size: 110%;
+        font-size: 170%;
+    }
+    #search-form input {
+        height: 30px;
+        width: 70%;
+    }
+    #search-form button {
+        height: 36px;
+        width: 15%;
+        margin-left: -5px;
     }
     .row {
-        max-width: 1000px;
-        width: 80%;
+        max-width: 1500px;
+        /* width: 80%; */
         padding-left: 0;
     }
     .four-column {  
-        width: 21%;
+        width: 16.75%;
         float: left; 
-        margin-left: 2.9%; 
+        /* margin-left: 2.9%;  */
         margin-right: 0; 
     }
     .four-column .name{

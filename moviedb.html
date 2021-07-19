@@ -1,6 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Zen+Tokyo+Zoo&display=swap" rel="stylesheet"> -->
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Teko&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
@@ -8,15 +15,19 @@
 </head>
 <body>
     <div class="row">
-        <div id="header"><h1>Movie Searcher</h1></div>
-        <form action="" method="" id="search-form">
-            <input type="text" name="" class="form-control" id="search-id" placeholder="Search...">
-            <button type="submit">Search</button>
-        </form>
+        <div id="header">
+            <h1>Movie Night</h1>
+            <form action="" method="" id="search-form">
+                <input type="text" name="" class="form-control" id="search-id" placeholder="Search...">
+                <!-- <button type="submit">Search</button> -->
+                <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+        </div>
     </div>
 
     <div class="row">
-        <p id="show-id"><b>Showing:</b></p>
+        <p id="movie-searched-id"><b>Movies Playing in Theatres Now:</b></p>
+        <p id="show-count-id"><b>Showing:</b></p>
         <div class = "movie-row">
         </div>
     </div>
