@@ -74,14 +74,17 @@ function displayResults(results) {
 
 		let des = document.createElement("div");
 		des.classList.add("name");
-		des.innerHTML = "Rating: " + JSresponse.results[i].vote_average + "<br>Vote Count: " + JSresponse.results[i].vote_count + "<br>Description: ";
+		des.innerHTML = "Description: ";
 		if(JSresponse.results[i].overview.length > 200) {
 			des.innerHTML += JSresponse.results[i].overview.substring(0,200) + "...";
 		}
 		else {
 			des.innerHTML += JSresponse.results[i].overview;
 		}
+		des.innerHTML += "<br><br>Rating: " + JSresponse.results[i].vote_average + "<br><br>Vote Count: " + JSresponse.results[i].vote_count;
 		des.style.fontSize = ".75em";
+		des.style.fontFamily = "font-family: Verdana, Geneva, sans-serif";
+		des.style.textAlign = "left";
 
 		let name = document.createElement("p");
 		name.classList.add("movie-name");

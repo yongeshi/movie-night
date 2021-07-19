@@ -37,11 +37,11 @@ h1, #search-form {
 .row {
     background-color: black;
     color: white;
-    /* width: 98%; */
-    /* margin-left: auto; */
+    width: 75%;
+    margin-left: auto;
     margin-right: auto;
     margin-bottom: 0;
-    /* padding-left: 2%; */
+    padding-left: 2%;
 }
 .row:after {
     content: "";
@@ -49,9 +49,9 @@ h1, #search-form {
     display: table;
 }
 .four-column {  
-    width: 29.5%;
+    width: 38%;
     float: left; 
-    margin-left: 1.75%; 
+    margin-left: 6%; 
     margin-right: auto;
     margin-bottom: 3%; 
     text-align: center;
@@ -99,9 +99,9 @@ h1, #search-form {
         margin-left: -5px;
     }
     .four-column {  
-        width: 25%;
+        width: 28%;
         float: left; 
-        margin-left: 2.0%; 
+        margin-left: 3.0%; 
     }
     .four-column .name{
         font-size: 130%;
@@ -129,10 +129,11 @@ h1, #search-form {
         padding-left: 0;
     }
     .four-column {  
-        width: 16.75%;
+        width: 21.25%;
         float: left; 
         /* margin-left: 2.9%;  */
         margin-right: 0; 
+        margin-left: 2.0%; 
     }
     .four-column .name{
         font-size: 100%;
