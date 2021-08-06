@@ -1,2 +1,2 @@
 # uses IMDB API
-TODO: add description, update design, add to webstie
+TODO: add description, update design, add to website
